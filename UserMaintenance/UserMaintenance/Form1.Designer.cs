@@ -35,6 +35,7 @@ namespace UserMaintenance
             this.lblLastName = new System.Windows.Forms.Label();
             this.btnAdd = new System.Windows.Forms.Button();
             this.userBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.bttnsavefile = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.userBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -75,11 +76,22 @@ namespace UserMaintenance
             // 
             this.userBindingSource.DataSource = typeof(UserMaintenance.Entities.User);
             // 
+            // bttnsavefile
+            // 
+            this.bttnsavefile.Location = new System.Drawing.Point(504, 206);
+            this.bttnsavefile.Name = "bttnsavefile";
+            this.bttnsavefile.Size = new System.Drawing.Size(75, 23);
+            this.bttnsavefile.TabIndex = 6;
+            this.bttnsavefile.Text = "button1";
+            this.bttnsavefile.UseVisualStyleBackColor = true;
+            this.bttnsavefile.Click += new System.EventHandler(this.bttnsavefile_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(605, 380);
+            this.Controls.Add(this.bttnsavefile);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.lblLastName);
             this.Controls.Add(this.txtLastName);
@@ -99,6 +111,7 @@ namespace UserMaintenance
         private System.Windows.Forms.Label lblLastName;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.BindingSource userBindingSource;
+        private System.Windows.Forms.Button bttnsavefile;
     }
 }
 
