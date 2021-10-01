@@ -33,8 +33,6 @@ namespace UserMaintenance
             this.listUsers = new System.Windows.Forms.ListBox();
             this.txtLastName = new System.Windows.Forms.TextBox();
             this.lblLastName = new System.Windows.Forms.Label();
-            this.lblFirstName = new System.Windows.Forms.Label();
-            this.txtFirstName = new System.Windows.Forms.TextBox();
             this.btnAdd = new System.Windows.Forms.Button();
             this.userBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.userBindingSource)).BeginInit();
@@ -50,9 +48,9 @@ namespace UserMaintenance
             // 
             // txtLastName
             // 
-            this.txtLastName.Location = new System.Drawing.Point(414, 42);
+            this.txtLastName.Location = new System.Drawing.Point(401, 42);
             this.txtLastName.Name = "txtLastName";
-            this.txtLastName.Size = new System.Drawing.Size(100, 20);
+            this.txtLastName.Size = new System.Drawing.Size(178, 20);
             this.txtLastName.TabIndex = 1;
             // 
             // lblLastName
@@ -64,27 +62,11 @@ namespace UserMaintenance
             this.lblLastName.TabIndex = 2;
             this.lblLastName.Text = "label1";
             // 
-            // lblFirstName
-            // 
-            this.lblFirstName.AutoSize = true;
-            this.lblFirstName.Location = new System.Drawing.Point(341, 84);
-            this.lblFirstName.Name = "lblFirstName";
-            this.lblFirstName.Size = new System.Drawing.Size(35, 13);
-            this.lblFirstName.TabIndex = 3;
-            this.lblFirstName.Text = "label2";
-            // 
-            // txtFirstName
-            // 
-            this.txtFirstName.Location = new System.Drawing.Point(414, 84);
-            this.txtFirstName.Name = "txtFirstName";
-            this.txtFirstName.Size = new System.Drawing.Size(100, 20);
-            this.txtFirstName.TabIndex = 4;
-            // 
             // btnAdd
             // 
             this.btnAdd.Location = new System.Drawing.Point(344, 145);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(170, 41);
+            this.btnAdd.Size = new System.Drawing.Size(235, 41);
             this.btnAdd.TabIndex = 5;
             this.btnAdd.Text = "button1";
             this.btnAdd.UseVisualStyleBackColor = true;
@@ -99,8 +81,6 @@ namespace UserMaintenance
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(605, 380);
             this.Controls.Add(this.btnAdd);
-            this.Controls.Add(this.txtFirstName);
-            this.Controls.Add(this.lblFirstName);
             this.Controls.Add(this.lblLastName);
             this.Controls.Add(this.txtLastName);
             this.Controls.Add(this.listUsers);
@@ -117,8 +97,6 @@ namespace UserMaintenance
         private System.Windows.Forms.ListBox listUsers;
         private System.Windows.Forms.TextBox txtLastName;
         private System.Windows.Forms.Label lblLastName;
-        private System.Windows.Forms.Label lblFirstName;
-        private System.Windows.Forms.TextBox txtFirstName;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.BindingSource userBindingSource;
     }
