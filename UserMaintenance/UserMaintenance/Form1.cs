@@ -24,7 +24,6 @@ namespace UserMaintenance
             btnAdd.Text = Resource.Add;
             bttnsavefile.Text = Resource.Fájlba_írás;
 
-
             listUsers.DataSource = users;
             listUsers.ValueMember = "ID";
             listUsers.DisplayMember = "FullName";
