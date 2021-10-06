@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Excel = Microsoft.Office.Tools.Excel;
+using Excel = Microsoft.Office.Interop.Excel;
 using System.Reflection;
 
 namespace Week4
@@ -18,7 +18,7 @@ namespace Week4
     {
         RealEstateEntities context = new RealEstateEntities();
         List<Flat> Flats;
-        Excel.App xlApp;
+        Excel.Application xlApp;
         Excel.Workbook xlWB;
         Excel.Worksheet xlSheet;
 
