@@ -23,7 +23,6 @@ namespace week05
             Ticks = context.Ticks.ToList();
             dataGridView1.DataSource = Ticks;
             CreatePortfolio();
-
         }
 
         private void CreatePortfolio()
