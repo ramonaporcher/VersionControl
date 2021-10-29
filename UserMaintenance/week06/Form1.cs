@@ -10,10 +10,9 @@ using System.Windows.Forms;
 
 namespace week06
 {
-
     public partial class Form1 : Form
     {
-        
+        //RateDataEntities context = new RateDataEntities();
 
         public Form1()
         {
