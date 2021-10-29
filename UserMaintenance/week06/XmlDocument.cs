@@ -8,5 +8,6 @@ namespace week06
 {
     class XmlDocument
     {
+        public void LoadXml() {}
     }
 }

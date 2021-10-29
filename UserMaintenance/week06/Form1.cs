@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.DataVisualization.Charting;
 
 namespace week06
 {
@@ -19,6 +20,8 @@ namespace week06
         public Form1()
         {
             InitializeComponent();
+            GetData();
+            dataGridView1.DataSource = Rates;
 
             var mnbService = new MnbServiceReference.MNBArfolyamServiceSoapClient();
 
@@ -31,11 +34,24 @@ namespace week06
 
             var response = mnbService.GetExchangeRates(request);
             var result = response.GetExchangeRatesResult;
-            dataGridView1.DataSource = Rates;
 
-            GetData();
 
-            
+            chartRateData.DataSource = Rates;
+
+            var series = chartRateData.Series[0];
+            series.ChartType = SeriesChartType.Line;
+            series.XValueMember = "Date";
+            series.YValueMembers = "Value";
+            series.BorderWidth = 2;
+
+            var legend = chartRateData.Legends[0];
+            legend.Enabled = false;
+
+            var chartArea = chartRateData.ChartAreas[0];
+            chartArea.AxisX.MajorGrid.Enabled = false;
+            chartArea.AxisY.MajorGrid.Enabled = false;
+            chartArea.AxisY.IsStartedFromZero = false;
+
         }
 
         private void GetData()
