@@ -1,4 +1,4 @@
 # VersionControl
 A repository for learning purposes
 
-A heti megoldások a UserControl-on belül találhatóak külön form-okon!
+A heti megoldások a UserMaintenance-en belül találhatóak külön form-okon!
