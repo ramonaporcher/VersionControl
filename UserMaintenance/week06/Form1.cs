@@ -12,11 +12,12 @@ namespace week06
 {
     public partial class Form1 : Form
     {
-        //RateDataEntities context = new RateDataEntities();
+
+        List<RateData2> Rates = new List<RateData2>();
 
         public Form1()
         {
-            InitializeComponent();
+            InitializeComponent();            
 
             var mnbService = new MnbServiceReference.MNBArfolyamServiceSoapClient();
 
