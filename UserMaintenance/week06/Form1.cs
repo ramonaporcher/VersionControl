@@ -14,6 +14,7 @@ namespace week06
     {
 
         List<RateData2> Rates = new List<RateData2>();
+        
 
         public Form1()
         {
@@ -29,6 +30,9 @@ namespace week06
             };
             var response = mnbService.GetExchangeRates(request);
             var result = response.GetExchangeRatesResult;
+
+            dataGridView1.DataSource = Rates;
+
 
         }
     }
