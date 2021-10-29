@@ -1,4 +1,4 @@
 # VersionControl
 A repository for learning purposes
 
-Week04 és Week05 megoldásai a UserControl-on belül találhatóan külön form-okon!
+A heti megoldások a UserControl-on belül találhatóak külön form-okon!
