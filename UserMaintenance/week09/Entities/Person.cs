@@ -13,6 +13,8 @@ namespace week09
         public int NbrOfChildren { get; set; }
         public bool IsAlive { get; set; }
 
+        Random rng = new Random(1234);
+
         public Person()
         {
             IsAlive = true;
