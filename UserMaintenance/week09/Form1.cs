@@ -50,7 +50,6 @@ namespace week09
         }
 
         
-
     private void SimStep(int year, Person person)
         {
             //Ha halott akkor kihagyjuk, ugrunk a ciklus következő lépésére
